@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css">
+    <script src="main.js" defer></script>
+    <title>Shutdown Login</title>
+</head>
+<body>
+    <div class="container">
+        <form id="login">
+            <img id="logo" src="../images/logo.svg">
+            <input type="text" name="username" placeholder="Username" autocomplete="username">
+            <input type="password" name="password" placeholder="Password" autocomplete="current-password">
+            <div class="checkbox-container">
+                <div class="checkbox">
+                    <input type="checkbox" name="remember">
+                    <div class="checkbox-icon"></div>
+                </div>
+                <span class="checkbox-label">remember</span>
+            </div>
+            <input type="button" value="Login">
+        </form>
+        <p class="error-message" style="display: none;">
+            <span class="error-message-prefix"><i class="fa-solid fa-circle-exclamation"></i> Error: </span>
+            <span class="error-message-text">Something went wrong! dqadwa dwa adwadwa dwa dwa dwa dawdw</span>
+        </p>
+    </div>
+</body>
+</html>

@@ -1,0 +1,90 @@
+:root {
+    --border-width: 5px;
+    --rgb-speed: 2s;
+}
+
+body {
+    font-family: "Poppins", sans-serif;
+    user-select: none;
+}
+
+.btn {
+    background-color: #272727;
+    color: whitesmoke;
+    border: none;
+    border-radius: 3px;
+    padding: 10px;
+    margin: 5px;
+    font-size: 1em;
+}
+
+.btn:hover,
+.btn:focus {
+    filter: brightness(1.2);
+}
+
+.btn:active {
+    filter: brightness(0.8);
+}
+
+.buttons {
+    display: flex;
+    flex-direction: row;
+}
+
+.timer-text {
+    font-size: 1.1em;
+    font-weight: 300;
+    text-align: center;
+}
+
+.timer-text > span {
+    padding: 5px 0px;
+    
+    border-radius: 5px;
+}
+
+#app {
+    position: relative;
+    border-radius: 2px;
+    padding: 20px;
+
+    height: calc(100% - 40px - var(--border-width, 0) * 2);
+    width: calc(100% - 40px - var(--border-width, 0) * 2);
+
+    display: flex;
+    flex-direction: column;
+    color: whitesmoke;
+    background: rgba(20, 20, 20, 0.9);
+
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+
+    justify-content: center;
+    align-items: center;
+}
+
+#app::before {
+    content: "";
+    border-radius: 5px;
+    background: conic-gradient(from 0deg, #fd004c,#fe9000, #fff020,#3edf4b,#3363ff,#b102b7, #fd004c);
+    position: absolute;
+    width: calc(100% + var(--border-width, 0%));
+    height: calc(100% + var(--border-width, 0%));
+    clip-path: polygon(
+        0%                                      0%,
+        0%                                      100%,
+        var(--border-width, 0%)                 100%,
+        var(--border-width, 0%)                 var(--border-width, 0%),
+        calc(100% - var(--border-width, 0%))    var(--border-width, 0%),
+        calc(100% - var(--border-width, 0%))    calc(100% - var(--border-width, 0%)),
+        var(--border-width, 0%)                 calc(100% - var(--border-width, 0%)),
+        var(--border-width, 0%)                 100%,
+        100%                                    100%,
+        100%                                    0%
+    );
+
+    animation: rgb var(--rgb-speed, 2s) ease-in-out infinite;
+}

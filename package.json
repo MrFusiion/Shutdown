@@ -1,0 +1,33 @@
+{
+  "name": "shutdown",
+  "version": "1.0.0",
+  "description": "Shutdown pc from mobile",
+  "main": "index.js",
+  "scripts": {
+    "start": "electron index.js",
+    "gen-keys": "node ./scripts/gen-keys.js",
+    "gen-cert": "node ./scripts/gen-cert.js",
+    "gen-rgb-css": "node ./scripts/gen-rgb-css.js",
+    "build": "node ./scripts/gen-keys.js & node ./scripts/gen-cert.js & node ./scripts/gen-rgb-css.js",
+    "rebuild": "node ./scripts/rebuild.js"
+  },
+  "author": "MrFusiion",
+  "license": "ISC",
+  "dependencies": {
+    "better-sqlite3": "^7.5.1",
+    "browserify": "^17.0.0",
+    "clean-css": "^5.3.0",
+    "dotenv": "^16.0.0",
+    "electron": "^18.2.0",
+    "express": "^4.18.1",
+    "express-session": "^1.17.2",
+    "html-minifier-terser": "^7.0.0-alpha.2",
+    "jsonwebtoken": "^8.5.1",
+    "ponse": "^7.0.0",
+    "terser": "^5.13.1",
+    "ws": "^8.6.0"
+  },
+  "devDependencies": {
+    "electron-rebuild": "^3.2.7"
+  }
+}

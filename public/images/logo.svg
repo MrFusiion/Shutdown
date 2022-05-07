@@ -1,0 +1,13 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="200" height="200" viewBox="0 0 200 200">
+  <defs>
+    <clipPath id="clip-boosting_2">
+      <rect width="200" height="200"/>
+    </clipPath>
+  </defs>
+  <g id="boosting_2" data-name="boosting – 2" clip-path="url(#clip-boosting_2)">
+    <path id="Path_95" data-name="Path 95" d="M65.618.761.682,68.066a2.459,2.459,0,0,0,.9,4.007l68.125,24.75V2.469A2.383,2.383,0,0,0,65.618.761Zm82.668,67.3L83.35.761a2.383,2.383,0,0,0-4.091,1.711V96.825l68.125-24.75a2.462,2.462,0,0,0,.9-4.01Z" transform="translate(25.516 25.484)" fill="#7289da" stroke="#000073" stroke-width="1" opacity="0.4"/>
+    <path id="Path_97" data-name="Path 97" d="M65.618.761.682,68.066a2.459,2.459,0,0,0,.9,4.007l68.125,24.75V2.469A2.383,2.383,0,0,0,65.618.761Zm82.668,67.3L83.35.761a2.383,2.383,0,0,0-4.091,1.711V96.825l68.125-24.75a2.462,2.462,0,0,0,.9-4.01Z" transform="translate(25.516 25.484)" fill="#7289da" stroke="#000073" stroke-width="1" opacity="0.4"/>
+    <path id="Path_98" data-name="Path 98" d="M65.618.761.682,68.066a2.459,2.459,0,0,0,.9,4.007l68.125,24.75V2.469A2.383,2.383,0,0,0,65.618.761Zm82.668,67.3L83.35.761a2.383,2.383,0,0,0-4.091,1.711V96.825l68.125-24.75a2.462,2.462,0,0,0,.9-4.01Z" transform="translate(25.516 25.484)" fill="#7289da" stroke="#000073" stroke-width="1" opacity="0.4"/>
+    <path id="Path_96" data-name="Path 96" d="M158.783,296.237l-57.455,20.857v39.371a2.383,2.383,0,0,0,4.091,1.711l55.867-57.932a2.427,2.427,0,0,0-2.5-4.007ZM31.821,300.244l55.867,57.932a2.383,2.383,0,0,0,4.091-1.711V317.094L34.323,296.237a2.427,2.427,0,0,0-2.5,4.007Z" transform="translate(3.447 -184.421)" fill="#313131" stroke="#171717" stroke-width="1"/>
+  </g>
+</svg>

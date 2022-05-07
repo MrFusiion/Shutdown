@@ -1,0 +1,6 @@
+keys
+.env
+db.sqlite
+package-lock.json
+node_modules
+.vscode

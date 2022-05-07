@@ -1,0 +1,291 @@
+@font-face {
+    font-family: "DigitalFont";
+    src:
+        url("./fonts/digital-7.ttf") format("truetype"),
+        url("./fonts/digital-7.woff") format("woff");
+}
+
+
+body {
+    color: whitesmoke;
+    background: linear-gradient(#2c2f33, #262b30);
+    height: 100vh;
+    margin: 0;
+    user-select: none;
+}
+
+.timer {
+    position: relative;
+    width: 80%;
+    max-width: 400px;
+    padding: 10px;
+
+    
+    color: #7d94e6;
+    
+    font-family: DigitalFont, sans-serif;
+    text-align: center;
+
+    display: flex;
+    justify-content: center;
+
+    box-shadow: 0px 5px 20px 0px #0000006c;
+    
+    border-radius: 5px;
+    border: solid #23272a 2px;
+    background-color: #2c2f33;
+}
+
+.timer span.hidden {
+    opacity: 0;
+}
+
+/* .timer .back span {
+    text-shadow: 0px 0px 20px rgba(0, 0, 0, 0.50); */
+    /* -webkit-text-stroke: 3px #242424;
+} */
+
+.timer .front,
+.timer .back {
+    margin: 0px;
+}
+
+.timer span {
+    display: inline-block;
+    font-size: 4em;
+    width: 30.5px;
+    font-weight: 500;
+   /* text-align: center; */
+}
+
+@media screen and (max-width: 300px) {
+    .timer span {
+        font-size: 3.1em;
+        width: 23px;
+    }
+}
+
+.timer span.sep {
+    width: auto;
+}
+
+.timer .front {
+    text-align: right;
+    justify-content: center;
+    align-self: center;
+    z-index: 1;
+}
+
+.timer .back {
+    position: absolute;
+    flex-direction: column;
+    justify-content: center;
+    align-self: center;
+    color: #26282b;
+}
+
+.btn {
+    display: inline-block;
+    border: none;
+    border-radius: 3px;
+    color: inherit;
+    padding: 10px 20px;
+    margin: 0px 3px;
+    background-color: #7289da;
+    cursor: pointer;
+}
+
+.btn:hover {
+    filter: brightness(110%);
+}
+
+.btn:active {
+    filter: brightness(90%);
+}
+
+#shutdown.btn,
+#logout.btn {
+    padding: 7.5px;
+    display: flex;
+    justify-content: center;
+    font-size: 1.3em;
+    align-items: center;
+}
+
+.topbar {
+    display: flex;
+    flex-direction: row;
+    position: absolute;
+    right: 5px;
+    top: 5px;
+}
+
+@media screen and (min-width: 600px) {
+    #shutdown.btn,
+    #logout.btn {
+        font-size: 2em;
+    }
+}
+
+#logout.btn,
+#stop.btn {
+    background-color: #ee6666;
+    color: #b14848;
+}
+
+#start.btn {
+    background-color: #7fca61;
+    color: #50813c;
+}
+
+.buttons {
+    position: absolute;
+    padding-top: 20px;
+    bottom: 20px;
+}
+
+.buttons .btn {
+    font-size: 1.1em;
+}
+
+.top {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    height: 33%;
+    /* border: 1px solid red; */
+
+    justify-content: center;
+    align-items: center;
+}
+
+.bottom {
+    height: calc(66% - 5px);
+    display: flex;
+    flex-direction: column;
+    margin: 5px;
+    /* border: 1px solid red; */
+}
+
+.time-buttons {
+    display: flex;
+    flex-direction: row;
+    margin-top: 50px;
+    justify-content: center;
+}
+
+@media screen and (max-height: 700px) {
+    .top {
+        height: 36%;
+    }
+    
+    .bottom {
+        height: calc(64% - 5px);
+    }
+
+    .buttons {
+        bottom: 0px;
+    }
+
+    .time-buttons {
+        margin-top: 20px;
+    }
+}
+
+.left,
+.right {
+    width: 50%;
+    max-width: 200px;
+    margin: 5px;
+    padding: 0px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    /* border: 1px solid red; */
+}
+
+.left .btn,
+.right .btn {
+    width: 100%;
+    margin: 0px;
+    margin-bottom: 10px;
+    background-color: #33363a;
+
+    padding: 20px 0px;
+
+    box-shadow: 0px 5px 7px 0px #0000006c;
+}
+
+.dialog {
+    display: flex;
+    flex-direction: column;
+    position: absolute;
+    background: #3c4046;
+    padding: 10px 10px 10px 10px;
+    border-radius: 5px;
+    border: #303338 2px solid;
+
+    font-family: "Roboto", sans-serif;
+
+    
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 666;
+    
+    box-shadow: 0px 0px 0px 999999px #0000006c;
+    
+    transition: opacity 0.15s ease-in-out;
+    pointer-events: none;
+}
+
+.dialog::after {
+    position: absolute;
+    content: "";
+    width: 100vw;
+    height: 100vh;
+    top: 50%;
+    left: 50%;
+    z-index: -1;
+    transform: translate(-50%, -50%);
+}
+
+.dialog-title {
+    display: flex;
+    width: 100%;
+    font-size: 1.1em;
+    border-bottom: 1px solid #8894a8;
+    margin-top: 0px;
+}
+
+.dialog-body {
+    margin: 10px;
+    padding: 20px;
+    border-radius: 5px;
+    background-color: #363a3f;
+
+    box-shadow: inset 0px 0px 2px 0px #0000006c;
+}
+
+.dialog-buttons {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    margin-top: 10px;
+}
+
+.dialog-btn {
+    background-color: #7289da;
+    border: none;
+    border-radius: 5px;
+    color: whitesmoke;
+    padding: 10px 20px;
+}
+
+.dialog-btn:hover {
+    filter: brightness(110%);
+}
+
+.dialog-btn:active {
+    filter: brightness(90%);
+}

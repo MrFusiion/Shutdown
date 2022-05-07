@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css">
+    <script src="main.js" defer></script>
+    <title>Timer</title>
+</head>
+<body>
+    <div class="dialog" style="opacity: 0;">
+        <div class="dialog-header">
+            <span class="dialog-title">Shutdown</span>
+        </div>
+        <div class="dialog-body">
+            <span class="dialog-message">PC is about to shutdown...</span>
+        </div>
+        <div class="dialog-buttons">
+            <button id="accept" class="dialog-btn">Accept</button>
+            <button id="cancel" class="dialog-btn">Cancel</button>
+        </div>
+    </div>
+    <div class="top">
+        <div class="timer">
+            <div class="front" id="timer-text">
+                <span class="hidden">0</span>
+                <span class="hidden">0</span>
+                <span class="sep hidden">:</span>
+                <span class="hidden">0</span>
+                <span class="hidden">0</span>
+                <span class="sep hidden">:</span>
+                <span class="hidden">0</span>
+                <span class="hidden">0</span>
+            </div>
+            <div class="back">
+                <span>0</span>
+                <span>0</span>
+                <span class="sep">:</span>
+                <span>0</span>
+                <span>0</span>
+                <span class="sep">:</span>
+                <span>0</span>
+                <span>0</span>
+            </div>
+        </div>
+        <div class="buttons">
+            <button class="btn" id="start"><i class="fa-solid fa-play"></i></button>
+            <button class="btn" id="pause"><i class="fa-solid fa-pause"></i></button>
+            <button class="btn" id="stop"><i class="fa-solid fa-stop"></i></button>
+        </div>
+        <div class="topbar">
+            <button class="btn" id="shutdown"><i class="fa-solid fa-power-off"></i></button>
+            <button class="btn" id="logout"><i class="fa-solid fa-arrow-right-from-bracket"></i></button>
+        </div>
+    </div>
+    <div class="bottom">
+        <div class="time-buttons">
+            <div class="left">
+                <div class="button">
+                    <button class="btn" data-seconds="300">+5 min</button>
+                    <button class="btn" data-seconds="900">+15 min</button>
+                    <button class="btn" data-seconds="1800">+30 min</button>
+                    <button class="btn" data-seconds="3600">+60 min</button>
+                </div>
+            </div>
+            <div class="right">
+                <div class="button">
+                    <button class="btn" data-seconds="-300">-5 min</button>
+                    <button class="btn" data-seconds="-900">-15 min</button>
+                    <button class="btn" data-seconds="-1800">-30 min</button>
+                    <button class="btn" data-seconds="-3600">-60 min</button>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>

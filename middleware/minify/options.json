@@ -1,0 +1,31 @@
+{
+    "js": {
+        "output": {
+            "comments": false
+        }
+    },
+    "css": {
+        "compatibility": "*",
+        "inline": ["none"],
+        "level": 2
+    },
+    "html": {
+        "removeComments": true,
+        "removeCommentsFromCDATA": true,
+        "removeCDATASectionsFromCDATA": true,
+        "collapseWhitespace": true,
+        "collapseBooleanAttributes": true,
+        "removeAttributeQuotes": true,
+        "removeRedundantAttributes": true,
+        "useShortDoctype": true,
+        "removeEmptyAttributes": true,
+
+        "removeEmptyElements": false,
+        "removeOptionalTags": true,
+        "removeScriptTypeAttributes": true,
+        "removeStyleLinkTypeAttributes": true,
+
+        "minifyJS": true,
+        "minifyCSS": true
+    }
+}
